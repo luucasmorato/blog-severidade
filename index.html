@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Blog Severidade</title>
+        
+        <style>
+            html body {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .text-col {
+                -webkit-column-count:2; /* Chrome, Safari, Opera */
+                -moz-column-count:2;    /* Firefox */
+                column-count:2;         /* padrão */
+            }
+            
+            h1, h2, h3 {
+                text-align: center;
+            }
+
+            div#total { 
+                width: 100%;
+                display: flex !important;
+                padding-top: 10px;
+            }
+
+            div#content {
+                width: 70%;
+                border-right: 1px solid #000;
+                padding: 15px;
+            }
+
+            div#posts {
+                padding: 5px;
+                background: rgba(214, 214, 214, 0.712);
+                border-radius: 4px;
+            }
+
+            form{
+                width: 30%;
+                padding: 10px;
+            }
+
+            form div {
+                margin-bottom: 12px;
+            }
+
+        </style>
+      
+    </head>
+
+
+    <body> 
+        <h1 >Blog Severidade</h1>
+       
+        <div id="total"> 
+            <div id="content">
+                <div> 
+                    <p class="text-col">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.    
+                    </p>
+                    
+                </div>
+
+                <div id="posts">
+                    <h2>Como gerir melhor o atendimento de pequenas empresas?</h2>
+                    <p id="subtitle">
+                        Entenda a importância de uma boa gestão do relacionamento com seu cliente.
+                    </p>
+                    <p id="text-content">
+                        Fazer uma <b>boa gestão do atendimento</b> ao cliente se tornou parte do negócio principal de muitas empresas. Isso porque o desafio principal aqui não é apenas atrair, e sim, trabalhar para que o cliente obtenha satisfação e, consequentemente, a empresa aumente o faturamento.
+                    </p>
+
+                    <p id="text-content">
+                        A área de gestão de atendimento tem tido muito mais visibilidade graças ao mercado de SaaS e serviços Freemium. Nesses modelos de negócio, a entrega de valor é contínua e se o cliente não está mais engajado ou interessado, ele pode facilmente cancelar a assinatura ou parar de receber um produto. 
+                    </p>
+
+                    <p id="text-content">
+                        Daí a grande importância de se trabalhar o Customer Success.
+                    </p>
+
+                    <h3>
+                        A gestão de atendimento com foco na satisfação do cliente
+                    </h3>
+                    <p id="text-content">
+                        Se a jornada do cliente e sua satisfação passam a depender essencialmente do pós-venda, o atendimento passa a ser a porta de entrada para entender quais são os gaps da solução e propor pontos de melhoria para a empresa.
+                    </p>
+
+                    <p id="text-content">
+                        O que os clientes pensam sobre o serviço prestado por você, o quão satisfeitos estão e feedbacks recebidos espontaneamente, são uma chave de ouro para os negócios, pois a solução do seu gap pode vir através deles. 
+                    </p>
+
+                    <p id="text-content">
+                        Em outras palavras, o atendimento passa a ser a principal <b>fonte de dados</b> e insumos para tomada de decisões. 
+                    </p>
+
+                    <p id="text-content">
+                        Essa área tem deixado de ser apenas receptiva e passado a agir mais ativamente em relação aos problemas, uma vez que consegue antecipar e automatizar as principais dúvidas. 
+                    </p>
+
+                    <p id="text-content">
+                        Podemos definir uma boa gestão de atendimento quando essa área é tratada como uma <b>área estratégica</b>, fazendo ponte com outras frentes internas para priorizar evoluções de produtos e desenvolvimento de novas features.
+                    </p>
+
+                </div>
+            </div>
+                
+            <form action="/blog/leads" method="POST"> 
+                <h3>Formulário Leads:</h3>
+
+                <div>
+                    E-mail: <input type="email" name="email">    
+                </div>
+               
+                <div>
+                    Nome: <input type="text" name="nome">    
+                </div>   
+
+                <div>
+                    O que você representa? 
+                    <select name="tipo">
+                        <option value="B2C">Pessoa</option>
+                        <option value="B2B">Empresa</option>
+                    </select>    
+                </div>   
+
+                <input type="submit" value="Enviar">  
+            </form>
+        </div>
+    </body>
+</html>

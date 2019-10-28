@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "blogseveridade",
+  "private_key_id": "6233b8c7fdac8cde026336ef8e4012d9e9afa2f0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC3I6srmgA/uJAx\nQ6RU9gUEl3i4SumOLo0OjFLDS9bPgk2G/v2iQyuCdq6TwM1a5uUH7yPc09wyl3cB\nsqF/znHr0k5ODCZtG1on8Dva8N7tsdkw9lr/jR8yxuNEDHt987+CFvFVB/+lkl1n\n6kTyIEXTefE0F50JdsRtAu7Qi1jv1VFH2pUAgGbBTYquC+RxFu75IuPzTJkBi1Ub\nXbxRs8Peyk5iWVX/8LOGm1dJaAwXraLJfJUuQs4WsO3EsbKIIYa7p1cfK/q7fUct\nPjyN/zPyJ05r6hADPgrgnaYgQp90a9BWnkD0qqh2PUPhvwT2dai+hzAIsW4uIbEv\nge+2hHlTAgMBAAECggEAA/n7SnwSi0+nmdo9JDcfTsU3MtE1lwe9ulYjqefopyLO\nKiM5QJ+yvydyjPS/wLyIto5jufTDsDmHtPq69Pp3kMZFOv6aiv3wDDP0KMHYJVMa\nQyzmNuxKhCC7aIvY1phHTTzQSqdczqyJ6Kq2iodW3MumCBqHJ2BzzWYl51NPQA3Z\nSQnx5FAC9nb2WpbAs/xhuGbBGZyY9/cB7uzkghTd5FVfBhSfnMUmVlnqyaSY16Gt\nkUt59J+IxIxs1VCMTzs7rHPhFDIEyxiC44kfCnJviM7TuSod13WCKE0rD5uP6Jpn\nXH8FLhmwoCtAIPeLXs1UgLlyc1/iJLOiGzDX8dDR+QKBgQDeA/+H79H0jHFsJCdP\ndjre8gOU46Gphj8Q0M5zxK7v26ycS+DNSzoQsO0sWSESM0gL4vFXDrIPvTzMk6Bz\nNeeAE4acCFzUcXEq/FWf/fka2ska2FtIqiv6MooPUlRqSvjdKqwAh7uvZWGT+fk7\n0xs0kiLTep13h+xW3JcbGEyN3QKBgQDTLD9EydFMKVwP3hFTLtX/sh+UE9wfxiQq\nwd2kfDh2944R5OGm28t8PuCD451r6J7xN0/UgM3W+yaF+791sO/scpj9R4uCMskC\ndOjeH9wBHtvbbRZsZOGPi3oRW5S0JIkVjQZHa4SFPA6LtL1FBymlRti59L3gmJN5\n1p1Ewg+o7wKBgQCriHVGxxD1nAkKH4jLyTJFDMGdqJ5AB3v0dw/7vCvZIGXlwG5o\nz0WGndwxVo/JqxtwK6CBvdXveStfeHQQb8Z0WyG2rnNipF9mcd2KJsTvbbjRZ/Zn\nVytxPNkUa2zTTyemYZDRPA3Tv0W7+fgJs9qiLIKB2IuPTdJZbkfFZGnJdQKBgCXS\ndPqDEyOK/Nwyr/OwHdAQPSuuauyd9nhaBLKjNRHJwP5fejMChu2X7Wpx6A4dueoG\nOBwdfcCVdw7kSiRwLmixFcm3eLs3EV2JRvQRzLu+pS4l2bBMWUH2f0SAnJ+vM4ZS\nnd9I2JFsckZ/dq7YW5Mon0SfGysQ6MkXsU9RWrCtAoGBAMTxYKtVQXyNnV0h89xx\n3Y2veF81T/7pqZGPKXlHkH7GZOp3lKsjKJs6syx/Q2jce1FAoBxEoWmiyONwTMIS\nzaiwEQyLui33D2sY1gpO2T9UuS4fm1f7qDsHu4/BnaFJrYjA/48ADjti69DtH017\ncMMRZd7zXak5INlr3RfSKM4Q\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-h368t@blogseveridade.iam.gserviceaccount.com",
+  "client_id": "100513531124884737846",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-h368t%40blogseveridade.iam.gserviceaccount.com"
+}
