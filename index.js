@@ -18,8 +18,8 @@ app.post('/blog/leads', (req, res) => {
      req.connection.remoteAddress || 
      req.socket.remoteAddress ||
      (req.connection.socket ? req.connection.socket.remoteAddress : null);
-     
-    const { email, nome, tipo } = req.body;
+
+    const { email, nome, tipo } = req.body; 
 
     var data = new Date(),
     dia  = data.getDate().toString(),
