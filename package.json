@@ -14,5 +14,8 @@
     "csv-stringify": "^5.3.3",
     "express": "^4.17.1",
     "firebase-admin": "^8.6.1"
+  },
+  "engines": {     
+    "node": "10.x"   
   }
 }
