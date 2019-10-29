@@ -16,10 +16,25 @@
                 font-family: Arial, Helvetica, sans-serif;
             }
 
-            .text-col {
+            .description {
                 -webkit-column-count:2; /* Chrome, Safari, Opera */
                 -moz-column-count:2;    /* Firefox */
                 column-count:2;         /* padrão */
+
+                color: #777;
+                margin: 0 0 40px;
+            }
+
+            #top-bar {
+                background: rgba(255, 29, 29, 0.767);
+                font-family: cursive;
+                font-size: 3em;
+                color: #fff;
+                margin: 0 0 0;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
             
             h1, h2, h3 {
@@ -34,24 +49,74 @@
 
             div#content {
                 width: 70%;
-                border-right: 1px solid #000;
+                border-right: 1px solid rgba(255, 29, 29, 0.315);
                 padding: 15px;
             }
 
             div#posts {
-                padding: 5px;
-                background: rgba(214, 214, 214, 0.712);
+                padding: 0 20px 10px;
+                background:  rgba(255, 29, 29, 0.075);
                 border-radius: 4px;
+                max-height: 700px;
+                overflow-y: scroll;
+
             }
 
-            form{
+            .div-img-post {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .img-post {
+                height: 310px;
+                border: 1px solid rgba(255, 29, 29, 0.767);
+                
+            }
+
+            div#form {
                 width: 30%;
                 padding: 10px;
+                padding: 20px;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .element-form {
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                padding: 6px 0;
             }
 
             form div {
                 margin-bottom: 12px;
             }
+
+            input, select {
+                height: 30px;
+                border-radius: 4px;
+                border: 1px solid rgba(255, 29, 29, 0.767);
+                padding: 5px;
+                margin-top: 5px;
+                background: #fff;
+            }
+
+            .button-default {
+                height: 50px;
+                width: 50%;
+                font-weight: bold;
+                font-size: 1.2em;
+                background: rgba(255, 29, 29, 0.767);
+                color: #fff;
+                cursor: pointer;
+            }
+
+           
 
         </style>
       
@@ -59,22 +124,27 @@
 
 
     <body> 
-        <h1 >Blog Severidade</h1>
+        <h1 id="top-bar">Blog Severidade</h1>
        
         <div id="total"> 
             <div id="content">
                 <div> 
-                    <p class="text-col">
-                        Quem nunca ouviu por aí “os clientes têm se tornado muito exigentes”?
+                    <p class="description" align="justify">
+                        &nbsp &nbsp &nbsp &nbsp Quem nunca ouviu por aí “os clientes têm se tornado muito exigentes”?
                         Sim, parece clichê, mas os consumidores são juízes severos dos negócios. Eles estão no centro, acompanham tendências, querem respostas rápidas e usam cada vez mais a tecnologia para comprar e consumir os produtos/serviços.
                         Por acompanhar essas mudanças no comportamento do consumidor e com o propósito de conversar sobre estratégias de atendimento ao cliente, ferramentas de chatbots, melhoria de resultados e relacionamento com o cliente,  nasceu o Blog Severidade.
                         Somos (no plural, porque seremos muitos com a mesma energia) apaixonados por pessoas, por negócios, por marketing e pelo mundo digital. E queremos que esse blog seja a dose diária de inspiração e conhecimento para alavancar seu negócio e seus resultados.                                
                     </p>
-                    
                 </div>
 
                 <div id="posts">
                     <h2>Como gerir melhor o atendimento de pequenas empresas?</h2>
+                    
+                    <div class="div-img-post">
+                        <img class="img-post" src="https://www.sbcoaching.com.br/blog/wp-content/uploads/2013/09/empresario-sucesso-mao.jpg">
+                    </div>
+
+                    
                     <p id="subtitle">
                         Entenda a importância de uma boa gestão do relacionamento com seu cliente.
                     </p>
@@ -116,27 +186,29 @@
                 </div>
             </div>
                 
-            <form action="/blog/leads" method="POST"> 
-                <h3>Formulário Leads:</h3>
-
-                <div>
-                    E-mail: <input type="email" name="email">    
-                </div>
-               
-                <div>
-                    Nome: <input type="text" name="nome">    
-                </div>   
-
-                <div>
-                    O que você representa? 
-                    <select name="tipo">
-                        <option value="B2C">Pessoa</option>
-                        <option value="B2B">Empresa</option>
-                    </select>    
-                </div>   
-
-                <input type="submit" value="Enviar">  
-            </form>
+            <div id="form">
+                <form action="/blog/leads" method="POST"> 
+                    <h3>Cadastre-se e tenha acesso a conteúdos exclusicos!</h3>
+    
+                    <div class="element-form">
+                        E-mail: <input type="email" name="email" required>    
+                    </div>
+                   
+                    <div class="element-form">
+                        Nome: <input type="text" name="nome" required>    
+                    </div>   
+    
+                    <div >
+                        O que você representa? 
+                        <select name="tipo">
+                            <option value="B2C">Pessoa</option>
+                            <option value="B2B">Empresa</option>
+                        </select>    
+                    </div>   
+    
+                    <input type="submit" value="Cadastrar" class="button-default">  
+                </form>
+            </div>
         </div>
     </body>
 </html>
