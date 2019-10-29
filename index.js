@@ -12,8 +12,14 @@ app.get('/blog', (req, res) => {
 
 app.post('/blog/leads', (req, res) => {
 
-    const ip = req.headers.host;
-    const { email, nome, tipo } = req.body
+    // const ip = req.connection.remoteAddress;
+
+    var ip = req.headers['x-forwarded-for'] || 
+     req.connection.remoteAddress || 
+     req.socket.remoteAddress ||
+     (req.connection.socket ? req.connection.socket.remoteAddress : null);
+     
+    const { email, nome, tipo } = req.body;
 
     var data = new Date(),
     dia  = data.getDate().toString(),
