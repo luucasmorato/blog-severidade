@@ -34,8 +34,9 @@ app.post('/blog/leads', (req, res) => {
 
 
     Lead.create({email, nome, ip, tipo, data_hora});
-    // res.send('Obrigado por se cadastrar');
+    //res.send('Obrigado por se cadastrar');
     res.redirect('https://drive.google.com/file/d/19INq4SdUUDlXd2JJtw6NsDq8PEMv_1rc/view');
+    
 });
 
 app.get('/blog/leads.csv', (req, res) => {
@@ -48,6 +49,6 @@ app.get('/blog/leads.csv', (req, res) => {
     });
 });
 
-//app.listen(3000); //DESCOMENTAR PARA RODAR NO LOCAL
+//app.listen(3000); //RODAR LOCAL
 app.listen(process.env.PORT);
 
