@@ -12,13 +12,6 @@ app.get('/blog', (req, res) => {
     res.sendFile(__dirname + '/index.html')
 });
 
-
-
-app.get('/blog/como-gerir-melhor-atendimento', (req, res) => {
-    res.sendFile(__dirname + '/melhor-atendimento.html')
-});
-
-
 app.post('/blog/leads', (req, res) => {
 
     var ip = req.headers['x-forwarded-for'] || 
