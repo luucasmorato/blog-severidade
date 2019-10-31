@@ -5,15 +5,9 @@ var path = require('path')
 
 const app = express();
 
-// app.use(express.static(path.join(__dirname, 'css')));
-// app.use(express.static('public'));
-// app.use("/public", express.static(__dirname + '/public'));
-// app.use('/blog', express.static('public'));
-// app.use(express.static(__dirname + '/'));
-// app.use(express.static('css'));
+
 app.use('/blog/css', express.static('css'));
 app.use('/blog/post', express.static('post'));
-
 
 app.use(bodyParser.urlencoded({extended: true}))
 
@@ -58,6 +52,6 @@ app.get('/blog/leads.csv', (req, res) => {
     });
 });
 
-app.listen(3000); //RODAR LOCAL
-// app.listen(process.env.PORT);
+//app.listen(3000); //RODAR LOCAL
+app.listen(process.env.PORT);
 
