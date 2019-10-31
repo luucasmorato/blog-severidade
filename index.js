@@ -4,11 +4,20 @@ const Lead  = require('./models/Lead');
 
 const app = express();
 
+app.use(express.static(__dirname + '/'));
+
 app.use(bodyParser.urlencoded({extended: true}))
 
 app.get('/blog', (req, res) => {
     res.sendFile(__dirname + '/index.html')
 });
+
+
+
+app.get('/blog/como-gerir-melhor-atendimento', (req, res) => {
+    res.sendFile(__dirname + '/melhor-atendimento.html')
+});
+
 
 app.post('/blog/leads', (req, res) => {
 
@@ -49,6 +58,6 @@ app.get('/blog/leads.csv', (req, res) => {
     });
 });
 
-//app.listen(3000); //RODAR LOCAL
-app.listen(process.env.PORT);
+app.listen(3000); //RODAR LOCAL
+//app.listen(process.env.PORT);
 
