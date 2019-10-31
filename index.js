@@ -21,8 +21,6 @@ app.get('/blog/como-gerir-melhor-atendimento', (req, res) => {
 
 app.post('/blog/leads', (req, res) => {
 
-    // const ip = req.connection.remoteAddress;
-
     var ip = req.headers['x-forwarded-for'] || 
      req.connection.remoteAddress || 
      req.socket.remoteAddress ||
