@@ -4,7 +4,7 @@ const Lead  = require('./models/Lead');
 
 const app = express();
 
-app.use(express.static(__dirname + '/'));
+// app.use(express.static(__dirname + '/'));
 
 app.use(bodyParser.urlencoded({extended: true}))
 
