@@ -58,6 +58,6 @@ app.get('/blog/leads.csv', (req, res) => {
     });
 });
 
-app.listen(3000); //RODAR LOCAL
-//app.listen(process.env.PORT);
+//app.listen(3000); //RODAR LOCAL
+app.listen(process.env.PORT);
 
