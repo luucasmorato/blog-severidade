@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xml:lang="pt-BR" lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Blog Severidade</title>
 
-        <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/reset.css">
+
 
         <!-- Hotjar Tracking Code for http://severidade.herokuapp.com/blog/ -->
         <script>
@@ -42,230 +44,79 @@
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDD7VRP"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
-        
-        
-        <style>
-            html body {
-                height: 100%;
-                width: 100%;
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-
-            .description {
-                -webkit-column-count:2; /* Chrome, Safari, Opera */
-                -moz-column-count:2;    /* Firefox */
-                column-count:2;         /* padrão */
-
-                color: #777;
-                margin: 0 0 40px;
-            }
-
-            #top-bar {
-                background: rgba(255, 29, 29, 0.767);
-                font-size: 3em;
-                color: #fff;
-                margin: 0 0 0;
-                height: 80px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                box-shadow: 6px 2px 10px  #000;
-            }
-            
-            h1, h2, h3 {
-                text-align: center;
-            }
-
-            div#total { 
-                width: 100%;
-                display: flex !important;
-                padding-top: 10px;
-            }
-
-            div#content {
-                width: 70%;
-                border-right: 1px solid rgba(255, 29, 29, 0.315);
-                padding: 15px;
-            }
-
-            div#posts {
-                padding: 0 20px 10px;
-                background:  rgba(255, 29, 29, 0.075);
-                border-radius: 4px;
-                max-height: 700px;
-                overflow-y: scroll;
-                box-shadow: 0px 1px 10px  rgba(255, 29, 29, 0.349);
-
-
-            }
-
-            .div-img-post {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .img-post {
-                height: 310px;
-                border: 1px solid rgba(255, 29, 29, 0.767);
-            }
-
-            div#form {
-                width: 30%;
-                padding: 10px;
-                padding: 20px;
-               
-            }
-
-            form {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-              
-            }
-
-            .element-form {
-                width: 80%;
-                display: flex;
-                flex-direction: column;
-                padding: 6px 0;
-            }
-
-            form div {
-                margin-bottom: 12px;
-            }
-
-            input, select {
-                height: 30px;
-                border-radius: 4px;
-                border: 1px solid rgba(255, 29, 29, 0.767);
-                padding: 5px;
-                margin-top: 5px;
-                background: #fff;
-            }
-
-            .button-default {
-                height: 50px;
-                width: 50%;
-                font-weight: bold;
-                font-size: 1.2em;
-                background: rgba(255, 29, 29, 0.767);
-                color: #fff;
-                cursor: pointer;
-                box-shadow: 5px 2px 5px rgba(0,0,0,0.5);
-            }
-
-            .button-default:hover{
-                background: rgba(202, 0, 0, 0.945);
-            }
-           
-            @media only screen and (max-width: 600px) {
-                div#total {
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    padding-top: 10px;
-                }
-            }
-
-        </style>
-      
+       
     </head>
 
-
-    <body> 
-        <h1 id="top-bar">Blog Severidade</h1>
-       
+    <body>
+        <div id="top-bar">
+            <h1>Severidade <strong>Blog</strong></h1>
+        </div>
+                       
         <div id="total"> 
             <div id="content">
-                <div> 
-                    <p class="description teste" align="justify">
-                        &nbsp &nbsp &nbsp &nbsp Quem nunca ouviu por aí “os clientes têm se tornado muito exigentes”?
-                        Sim, parece clichê, mas os consumidores são juízes severos dos negócios. Eles estão no centro, acompanham tendências, querem respostas rápidas e usam cada vez mais a tecnologia para comprar e consumir os produtos/serviços.
-                        Por acompanhar essas mudanças no comportamento do consumidor e com o propósito de conversar sobre estratégias de atendimento ao cliente, ferramentas de chatbots, melhoria de resultados e relacionamento com o cliente,  nasceu o Blog Severidade.
-                        Somos (no plural, porque seremos muitos com a mesma energia) apaixonados por pessoas, por negócios, por marketing e pelo mundo digital. E queremos que esse blog seja a dose diária de inspiração e conhecimento para alavancar seu negócio e seus resultados.                                
-                    </p>
+                <div id="description">
+                    <h1>Sobre o Blog</h1>
+                    <div class="content_descricao">
+                        <p>Quem nunca ouviu por aí “os clientes têm se tornado muito exigentes”? Sim, parece clichê, mas os consumidores são juízes severos dos negócios. Eles estão no centro, acompanham tendências, querem respostas rápidas e usam cada vez mais a tecnologia para comprar e consumir os produtos/serviços.</p>
+                        <p>Por acompanhar essas mudanças no comportamento do consumidor e com o propósito de conversar sobre estratégias de atendimento ao cliente, ferramentas de chatbots, melhoria de resultados e relacionamento com o cliente, nasceu o Blog Severidade.</p>
+                        <p>Somos (no plural, porque seremos muitos com a mesma energia) apaixonados por pessoas, por negócios, por marketing e pelo mundo digital. E queremos que esse blog seja a dose diária de inspiração e conhecimento para alavancar seu negócio e seus resultados.                                
+                        </p>                        
+                    </div>
                 </div>
 
-                <div id="posts" class="teste">
-
+                <div id="conteirner_posts">
+                    <div class="post">
                         <h1>Como gerir melhor o atendimento de pequenas empresas?</h1>
                         
                         <div class="div-img-post">
                             <img class="img-post" src="https://www.sbcoaching.com.br/blog/wp-content/uploads/2013/09/empresario-sucesso-mao.jpg">
                         </div>
-                        
-                        <p id="subtitle">
-                            Entenda a importância de uma boa gestão do relacionamento com seu cliente.
-                        </p>
-                        <p>
-                            Fazer uma <b>boa gestão do atendimento</b> ao cliente se tornou parte do negócio principal de muitas empresas. Isso porque o desafio principal aqui não é apenas atrair, e sim, trabalhar para que o cliente obtenha satisfação e, consequentemente, a empresa aumente o faturamento.
-                        </p>
-    
-                        <p>
-                            A área de gestão de atendimento tem tido muito mais visibilidade graças ao mercado de SaaS e serviços Freemium. Nesses modelos de negócio, a entrega de valor é contínua e se o cliente não está mais engajado ou interessado, ele pode facilmente cancelar a assinatura ou parar de receber um produto. 
-                        </p>
-    
-                        <p>
-                            Daí a grande importância de se trabalhar o Customer Success.
-                        </p>
-    
-                        <h2>
-                            A gestão de atendimento com foco na satisfação do cliente
-                        </h2>
-                        <p>
-                            Se a jornada do cliente e sua satisfação passam a depender essencialmente do pós-venda, o atendimento passa a ser a porta de entrada para entender quais são os gaps da solução e propor pontos de melhoria para a empresa.
-                        </p>
-    
-                        <p>
-                            O que os clientes pensam sobre o serviço prestado por você, o quão satisfeitos estão e feedbacks recebidos espontaneamente, são uma chave de ouro para os negócios, pois a solução do seu gap pode vir através deles. 
-                        </p>
-    
-                        <p>
-                            Em outras palavras, o atendimento passa a ser a principal <b>fonte de dados</b> e insumos para tomada de decisões. 
-                        </p>
-    
-                        <p>
-                            Essa área tem deixado de ser apenas receptiva e passado a agir mais ativamente em relação aos problemas, uma vez que consegue antecipar e automatizar as principais dúvidas. 
-                        </p>
-    
-                        <p>
-                            Podemos definir uma boa gestão de atendimento quando essa área é tratada como uma <b>área estratégica</b>, fazendo ponte com outras frentes internas para priorizar evoluções de produtos e desenvolvimento de novas features.
-                        </p>
-                        
-                </div>
-            </div>
-                
-            <div id="form">
-                <form action="/blog/leads" method="POST"> 
-                    
-                    <h3>Cadastre-se e tenha acesso a conteúdos exclusivos</h3>
-
-                    <div class="element-form">
-                        E-mail: <input type="email" name="email" required>    
+                        <div class="content_post">
+                            <p id="subtitle"> Entenda a importância de uma boa gestão do relacionamento com seu cliente.</p>
+                            <p>Fazer uma <b>boa gestão do atendimento</b> ao cliente se tornou parte do negócio principal de muitas empresas. Isso porque o desafio principal aqui não é apenas atrair, e sim, trabalhar para que o cliente obtenha satisfação e, consequentemente, a empresa aumente o faturamento.</p>
+                            <p>A área de gestão de atendimento tem tido muito mais visibilidade graças ao mercado de SaaS e serviços Freemium. Nesses modelos de negócio, a entrega de valor é contínua e se o cliente não está mais engajado ou interessado, ele pode facilmente cancelar a assinatura ou parar de receber um produto. Daí a grande importância de se trabalhar o Customer Success.</p>
+                            <h2>A gestão de atendimento com foco na satisfação do cliente</h2>
+                            <p>Se a jornada do cliente e sua satisfação passam a depender essencialmente do pós-venda, o atendimento passa a ser a porta de entrada para entender quais são os gaps da solução e propor pontos de melhoria para a empresa.</p>
+                            <p>O que os clientes pensam sobre o serviço prestado por você, o quão satisfeitos estão e feedbacks recebidos espontaneamente, são uma chave de ouro para os negócios, pois a solução do seu gap pode vir através deles.</p>​
+                            <p>Em outras palavras, o atendimento passa a ser a principal <b>fonte de dados</b> e insumos para tomada de decisões.</p>​
+                            <p>Essa área tem deixado de ser apenas receptiva e passado a agir mais ativamente em relação aos problemas, uma vez que consegue antecipar e automatizar as principais dúvidas.</p>
+                            <p>Podemos definir uma boa gestão de atendimento quando essa área é tratada como uma <b>área estratégica</b>, fazendo ponte com outras frentes internas para priorizar evoluções de produtos e desenvolvimento de novas features.</p>
+                        </div>
                     </div>
-                   
-                    <div class="element-form">
-                        Nome: <input type="text" name="nome" required>    
-                    </div>   
-    
-                    <div >
-                        O que você representa? 
-                        <select name="tipo">
-                            <option value="B2C">Autônomo</option>
-                            <option value="B2B">Empresa</option>
-                        </select>    
-                    </div>   
-    
-                    <!-- <h4>5 dicas para não perder seus clientes em 2020</h4> -->
+                </div>
+                ​
+                <div id="form">
+                    <form action="/blog/leads" method="POST"> 
+                        
+                        <h3>Cadastre-se e tenha acesso a conteúdos exclusivos:</h3>
 
+                        <div class="element-form">
+                            <div class="field-form"> E-mail:</div>
+                            <input type="email" name="email" required>    
+                        </div>
+                        
+                        <div class="element-form">
+                            <div class="field-form">Nome Completo: </div>  
+                            <input type="text" name="nome" required>    
+                        </div>   
+        
+                        <div class="element-form">
+                            <div class="field-form">
+                                O que você representa?
+                                <select name="tipo">
+                                    <option value="B2C">Pessoa autônoma</option>
+                                    <option value="B2B">Empresa</option>
+                                </select>    
+                            </div>
+                             
+                        </div>   
+                        <!-- <a href="post/teste.html">s</a> -->
+                        
+                        <input type="submit" value="Cadastrar" class="btn-default"> 
 
-                    <input type="submit" value="Enviar" class="button-default">  
-                </form>
-            </div>
+                    </form>
+                </div>
+            </div>               
         </div>
     </body>
 </html>
