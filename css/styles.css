@@ -183,6 +183,7 @@ h3 {
 
 a.back {
     text-decoration: none;
+    color: #fff;
 }
 
 a.back:hover {
