@@ -177,8 +177,8 @@ form {
     border-radius: 4px;
 }
 h3 {
-    font-size: 15px;
-    margin-top: 7px;
+    font-size: 1.2em;
+    margin-top: 15px;
 }
 
 @media screen and (min-width: 450px){
