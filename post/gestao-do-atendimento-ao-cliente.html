@@ -22,20 +22,18 @@
             ga('set', 'userId', 'USER_ID'); // Defina o ID de usuário usando o user_id conectado.
         </script>
 
-
-
-
         <meta charset="UTF-8">
+        <meta name="description" content="Dicas incríveis para você melhorar o seu relacionamento com o cliente e começar agora mesmo.">
+        <meta name="keywords" content="central de atendimento; relacionamento com o cliente; whatsapp business; chatbot">
+        <meta property="og:type" content="07 Dicas de Gestão do Atendimento">
+        <meta property="og:url" content="https://severidade.herokuapp.com/blog/post/gestao-do-atendimento-ao-cliente.html">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
         <title>Blog Severidade</title>
 
         <link rel="stylesheet" href="../css/styles.css">
         <link rel="stylesheet" href="../css/reset.css">
-<!-- 
-        <link rel="stylesheet" href="../css/styles.css">
-        <link rel="stylesheet" href="../css/reset.css"> -->
-      
     </head>
 
     <body>
@@ -157,7 +155,38 @@
                             </p>
                         </div>
                     </div>
-                </div>                ​              
+                </div>  
+                
+                <div id="form">
+                    <form action="/blog/leads" method="POST">
+
+                        <h3>Cadastre-se e tenha acesso a conteúdos exclusivos:</h3>
+
+                        <div class="element-form">
+                            <div class="field-form"> E-mail:</div>
+                            <input type="email" name="email" required>
+                        </div>
+
+                        <div class="element-form">
+                            <div class="field-form">Nome Completo: </div>
+                            <input type="text" name="nome" required>
+                        </div>
+
+                        <div class="element-form">
+                            <div class="field-form">
+                                O que você representa?
+                                <select name="tipo">
+                                    <option value="B2C">Profissional autônomo</option>
+                                    <option value="B2B">Empresa</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <input type="submit" value="Cadastrar" class="btn-default">
+
+                    </form>
+                </div>​              
             </div>               
         </div>
     </body>

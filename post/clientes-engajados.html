@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html xml:lang="pt-BR" lang="pt-BR">
     <head>
-
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -22,20 +21,18 @@
             ga('set', 'userId', 'USER_ID'); // Defina o ID de usuário usando o user_id conectado.
         </script>
 
-
-
-
         <meta charset="UTF-8">
+        <meta name="description" content="Aprenda como o engajamento tem se tornado uma poderosa arma para as empresas conquistarem e manterem seus clientes.">
+        <meta name="keywords" content="engajamento; o que é chatbot, ferramentas para atendimento ao cliente">
+        <meta property="og:type" content="Engaje ou morra!">
+        <meta property="og:url" content="https://severidade.herokuapp.com/blog/post/clientes-engajados.html">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
         <title>Blog Severidade</title>
 
         <link rel="stylesheet" href="../css/styles.css">
         <link rel="stylesheet" href="../css/reset.css">
-<!-- 
-        <link rel="stylesheet" href="../css/styles.css">
-        <link rel="stylesheet" href="../css/reset.css"> -->
-      
     </head>
 
     <body>
@@ -144,10 +141,39 @@
                                 automatizações. A inteligência artificial consegue gerar a sua onipresença
                                 em toda a trajetória de seu cliente.
                             </p>
-                            
                         </div>
                     </div>
-                </div>                ​              
+                </div>   
+                <div id="form">
+                    <form action="/blog/leads" method="POST">
+
+                        <h3>Cadastre-se e tenha acesso a conteúdos exclusivos:</h3>
+
+                        <div class="element-form">
+                            <div class="field-form"> E-mail:</div>
+                            <input type="email" name="email" required>
+                        </div>
+
+                        <div class="element-form">
+                            <div class="field-form">Nome Completo: </div>
+                            <input type="text" name="nome" required>
+                        </div>
+
+                        <div class="element-form">
+                            <div class="field-form">
+                                O que você representa?
+                                <select name="tipo">
+                                    <option value="B2C">Profissional autônomo</option>
+                                    <option value="B2B">Empresa</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <input type="submit" value="Cadastrar" class="btn-default">
+
+                    </form>
+                </div>             ​              
             </div>               
         </div>
     </body>
