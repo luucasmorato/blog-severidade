@@ -123,6 +123,23 @@ form {
     font-size: 18px;
 }
 
+.saiba-mais {
+    border: 1px solid var(--cor_02_primaria);
+    color: var(--cor_02_primaria);
+    border-radius: 10px;
+    width: 130px;    
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 2em;
+    text-align: center;
+    
+}
+
+.saiba-mais:hover {
+    background: var(--cor_02_primaria);
+    color: #FFF;
+}
+
 .field-form {
     margin-top: 12px;
     display: block;

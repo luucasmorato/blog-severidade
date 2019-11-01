@@ -9,6 +9,7 @@ const app = express();
 app.use('/blog/css', express.static('css'));
 app.use('/blog/post', express.static('post'));
 
+
 app.use(bodyParser.urlencoded({extended: true}))
 
 app.get('/blog', (req, res) => {
