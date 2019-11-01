@@ -137,6 +137,7 @@ form {
     margin-bottom: 40px;
     font-size: 2em;
     text-align: center;
+    text-decoration: none;
 
     grid-column: 3 / 5;
     grid-row: 4 /5;
