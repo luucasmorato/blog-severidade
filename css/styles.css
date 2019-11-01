@@ -179,7 +179,7 @@ form {
 
 @media screen and (min-width: 450px){
 	#top-bar h1 {font-size: 68px;}
-	.div-img-post { height: 300px; }
+	.div-img-post { height: 300px; border: 1px solid var(--cor_02_primaria); }
 	img.img-post { position: relative; object-fit: contain;}
 }
 
