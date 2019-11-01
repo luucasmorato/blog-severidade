@@ -8,6 +8,8 @@ const app = express();
 
 app.use('/blog/css', express.static('css'));
 app.use('/blog/post', express.static('post'));
+app.use('/blog/images', express.static('images'));
+
 
 
 app.use(bodyParser.urlencoded({extended: true}))
