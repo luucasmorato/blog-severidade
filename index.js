@@ -41,7 +41,7 @@ app.post('/blog/leads', (req, res) => {
 
     Lead.create({email, nome, ip, tipo, data_hora});
     //res.send('Obrigado por se cadastrar');
-    res.redirect('https://drive.google.com/file/d/19INq4SdUUDlXd2JJtw6NsDq8PEMv_1rc/view');
+    res.redirect('https://drive.google.com/open?id=1qB1oTnM65t_BoYAmF9ce2HMfSAWU4x1n');
     
 });
 
