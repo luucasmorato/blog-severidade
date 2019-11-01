@@ -81,6 +81,11 @@ p { font-family: 'Barlow', sans-serif; font-weight: 300; font-size: 19px; line-h
     color: var(--cor_02_primaria);
     grid-column: 1 / 7;
     grid-row: 1 / 2;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
 }
 
 /*Imagem Post*/
