@@ -176,6 +176,10 @@ form {
     border: none;
     border-radius: 4px;
 }
+h3 {
+    font-size: 15px;
+    margin-top: 7px;
+}
 
 @media screen and (min-width: 450px){
 	#top-bar h1 {font-size: 68px;}
