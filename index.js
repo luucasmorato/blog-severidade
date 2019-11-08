@@ -1,15 +1,13 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const Lead  = require('./models/Lead');
+
 var path = require('path')
-
 const app = express();
-
 
 app.use('/blog/css', express.static('css'));
 app.use('/blog/post', express.static('post'));
 app.use('/blog/images', express.static('images'));
-
 
 
 app.use(bodyParser.urlencoded({extended: true}))
@@ -30,7 +28,7 @@ app.post('/blog/leads', (req, res) => {
     var data = new Date(),
     dia  = data.getDate().toString(),
     diaF = (dia.length == 1) ? '0'+dia : dia,
-    mes  = (data.getMonth()+1).toString(), //+1 pois no getMonth Janeiro começa com zero.
+    mes  = (data.getMonth()+1).toString(),
     mesF = (mes.length == 1) ? '0'+mes : mes,
     anoF = data.getFullYear();
     horaF = data.getHours();
@@ -40,7 +38,6 @@ app.post('/blog/leads', (req, res) => {
 
 
     Lead.create({email, nome, ip, tipo, data_hora});
-    //res.send('Obrigado por se cadastrar');
     res.redirect('https://drive.google.com/open?id=1qB1oTnM65t_BoYAmF9ce2HMfSAWU4x1n');
     
 });
@@ -55,5 +52,4 @@ app.get('/blog/leads.csv', (req, res) => {
     });
 });
 
-//app.listen(3000); //RODAR LOCAL
-app.listen(process.env.PORT);
+app.listen(process.env.PORT || 3000);
